@@ -40,10 +40,6 @@ void reset(int, int, int, int);
 	#define clearYellow_header
 void clearYellow();
 #endif
-#ifndef dfs_header
-	#define dfs_header
-void dfs(int, int, int, int, int, int, bool&);
-#endif
 #ifndef bfs_header
 	#define bfs_header
 void bfs(int, int, int, int);
@@ -199,38 +195,6 @@ void clearYellow()
 			if (col[i][j] == 4)
 				col[i][j] = 0;
 	render(0);
-}
-
-void dfs(int i, int j, int si, int sj, int ei, int ej, bool& done)
-{
-	visited[i][j] = true;
-	if (!((i == si && j == sj) || (i == ei && j == ej)))
-		col[i][j] = 1;
-	render(5);
-	if (i == ei && j == ej)
-	{
-		clear();
-		backTrack(ei, ej, false);
-		done = true;
-		return;
-	}
-	for (int z = 0; z < 8; ++z)
-	{
-		int ni = i + dir[z].first;
-		int nj = j + dir[z].second;
-		if (ni >= 0 && ni < ver && nj >= 0 && nj < hor && col[ni][nj] != 3 && !visited[ni][nj])
-		{
-			pi[ni][nj] = i, pj[ni][nj] = j;
-			dfs(ni, nj, si, sj, ei, ej, done);
-			if (done)
-				break;
-		}
-	}
-	if (done)
-		return;
-	if (!(i == si && j == sj))
-		col[i][j] = 2;
-	render(5);
 }
 
 void bfs(int si, int sj, int ei, int ej)
@@ -450,8 +414,6 @@ void aStar(int si, int sj, int ei, int ej)
 				}
 			}
 		}
-		//pop_heap(openList.begin(), openList.end());
-		//openList.pop_back();
 		vector<pair<int, int>> nvec;
 		for (int i = 1; i < (int)openList.size(); ++i)
 			nvec.push_back(openList[i]);
@@ -490,15 +452,7 @@ int main()
 			else if (!((i == si && j == sj) || (i == ei && j == ej)))
 				col[i][j] = 3;
 		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D) && ei != -1) // D -> DFS
-		{
-			ok = false;
-			bool bol = false;
-			clearYellow();
-			reset(si, sj, ei, ej);
-			dfs(si, sj, si, sj, ei, ej, bol);
-		}
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::B) && ei != -1) // B -> BFS
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::B) && ei != -1) // B -> BFS
 		{
 			ok = false;
 			clearYellow();
