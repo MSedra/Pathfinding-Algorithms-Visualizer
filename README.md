@@ -1,5 +1,5 @@
-# Algorithms Visualizer
-A*,Best First Search,Dijkstra,BFS,BiBFS,DFS 
+# Pathfinding Algorithms' Visualizer
+A* , Best First Search , Dijkstra , BFS , BiBFS , DFS 
 
 ---
 
@@ -22,7 +22,5 @@ A*,Best First Search,Dijkstra,BFS,BiBFS,DFS
 * Then
   * If you want to run another algorithm on the same maze, press the letter of the wanted algorithm
   * press 'R' to reset the maze
-* change sleepingTime constant variables accordingly to increase/decrease the speed of the visualization of an algorithm or backtracking the path
-** It should be noted that shortest path algorithms here can simply be replaced by BFS because
-** there is no weights, but the main purpose is to visualize the algorithms and get a better
-** understanding of how they work.
+* change sleepingTime constant variables accordingly to increase/decrease the speed of the visualization of an algorithm or the speed backtracking the path
+* It should be noted that shortest path algorithms here can simply be replaced by BFS because there is no weights, but the main purpose is to visualize the algorithms and get a better understanding of how they work.
