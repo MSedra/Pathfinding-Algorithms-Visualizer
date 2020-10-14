@@ -19,7 +19,7 @@ A* , Best First Search , Dijkstra , BFS , BiBFS , DFS
   * After running DFS, the destination node will be colored yellow
   * After running any other algorithm, all the nodes in the path will be colored yellow showing the exact shortest path
 * Wait until the current algorithm's visualization is finished
-* Then
+* Then,
   * If you want to run another algorithm on the same maze, press the letter of the wanted algorithm
   * press 'R' to reset the maze
 * change sleepingTime constant variables accordingly to increase/decrease the speed of the visualization of an algorithm or the speed of backtracking the path
