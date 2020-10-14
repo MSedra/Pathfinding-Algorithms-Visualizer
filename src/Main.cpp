@@ -63,10 +63,10 @@ const int bibfsSleepingTime = 5;
 const int bestFirstSearchSleepingTime = 12;
 const int dijkstraSleepingTime = 3;
 const int aStarSleepingTime = 9;
-x
+
 	// change sleepingTime to increase/decrease the speed of the visualization of an algorithm or backtracking the path
 
-	sf::RenderWindow window(sf::VideoMode(vx, vy), "Algorithm Visualizer", sf::Style::Default);
+sf::RenderWindow window(sf::VideoMode(vx, vy), "Algorithm Visualizer", sf::Style::Default);
 sf::RectangleShape player(sf::Vector2f(sz, sz));
 
 vector<pair<int, int>> dir = { { 1, 0 }, { 0, 1 }, { 1, 1 }, { -1, 1 }, { 1, -1 }, { -1, 0 }, { -1, -1 }, { 0, -1 } };
