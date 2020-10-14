@@ -64,7 +64,7 @@ const int bestFirstSearchSleepingTime = 12;
 const int dijkstraSleepingTime = 3;
 const int aStarSleepingTime = 9;
 
-	// change sleepingTime to increase/decrease the speed of the visualization of an algorithm or backtracking the path
+// change sleepingTime to increase/decrease the speed of the visualization of an algorithm or backtracking the path
 
 sf::RenderWindow window(sf::VideoMode(vx, vy), "Algorithm Visualizer", sf::Style::Default);
 sf::RectangleShape player(sf::Vector2f(sz, sz));
@@ -330,7 +330,7 @@ void bestFirstSearch(int si, int sj, int ei, int ej)
 {
 	priority_queue<pair<int, int>, vector<pair<int, int>>, cmp3> openList;
 	h[si][sj] = 0;
-	h[ver][hor] = INT_MAX;
+	h[ver][hor] = INT_MIN;
 	exists[si][sj] = true;
 	openList.push({ si, sj });
 	while (!openList.empty())
@@ -362,6 +362,7 @@ void bestFirstSearch(int si, int sj, int ei, int ej)
 			}
 		}
 		openList.push({ ver, hor });
+		openList.pop();
 	}
 	clear();
 }
@@ -370,7 +371,7 @@ void dijkstra(int si, int sj, int ei, int ej)
 {
 	priority_queue<pair<int, int>, vector<pair<int, int>>, cmp> pq;
 	dist[si][sj] = 0;
-	dist[ver][hor] = INT_MAX;
+	dist[ver][hor] = INT_MIN;
 	exists[si][sj] = true;
 	pq.push({ si, sj });
 	while (!pq.empty())
@@ -405,14 +406,16 @@ void dijkstra(int si, int sj, int ei, int ej)
 			}
 		}
 		pq.push({ ver, hor });
+		pq.pop();
 	}
+	clear();
 }
 
 void aStar(int si, int sj, int ei, int ej)
 {
 	priority_queue<pair<int, int>, vector<pair<int, int>>, cmp2> openList;
 	g[si][sj] = h[si][sj] = 0;
-	g[ver][hor] = INT_MAX >> 1, h[ver][hor] = INT_MAX >> 1;
+	g[ver][hor] = INT_MIN >> 1, h[ver][hor] = INT_MIN >> 1;
 	exists[si][sj] = true;
 	openList.push({ si, sj });
 	while (!openList.empty())
@@ -448,6 +451,7 @@ void aStar(int si, int sj, int ei, int ej)
 			}
 		}
 		openList.push({ ver, hor });
+		openList.pop();
 	}
 	clear();
 }
