@@ -1,5 +1,5 @@
 # Pathfinding Algorithms' Visualizer
-A* , Best First Search , Dijkstra , BFS , BiBFS , DFS 
+A* , Best First Search , Bidirectional BFS , Dijkstra , BFS , DFS 
 
 ---
 
@@ -11,9 +11,9 @@ A* , Best First Search , Dijkstra , BFS , BiBFS , DFS
 * Press
   * 'A' to run A* 
   * 'T' to run Best First Search
+  * 'I' to run Bidirectional BFS
   * 'J' to run Dijkstra
   * 'B' to run BFS
-  * 'I' to run BiBfs
   * 'D' to run DFS
 * If there is a path from the source to the destination,
   * After running DFS, the destination node will be colored yellow
