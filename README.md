@@ -27,4 +27,6 @@ A* , Best First Search , Bidirectional BFS , Dijkstra , BFS , DFS
 * Project was made using SFML C++
   
   ![Desktop-20201014-17054416](https://user-images.githubusercontent.com/62825437/96009572-18670580-0e41-11eb-8485-cd166b8a6cc9.gif)
+ 
+* NOTE: Algorithms are visualized in the above order
 
