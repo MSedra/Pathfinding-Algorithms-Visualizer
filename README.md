@@ -22,6 +22,6 @@ A* , Best First Search , Bidirectional BFS , Dijkstra , BFS , DFS
 * Then,
   * If you want to run another algorithm on the same maze, press the letter of the wanted algorithm
   * press 'R' to reset the maze
-* change sleepingTime constant variables accordingly to increase/decrease the speed of the visualization of an algorithm or the speed of backtracking the path
+* Change sleepingTime constant variables accordingly to increase/decrease the speed of the visualization of an algorithm or the speed of backtracking the path
 * It should be noted that shortest path algorithms here can simply be replaced by BFS because there are no weights, but the main purpose is to visualize the algorithms and get a better understanding of how they work.
 * Project was made using SFML C++
