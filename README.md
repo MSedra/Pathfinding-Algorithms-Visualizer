@@ -25,3 +25,6 @@ A* , Best First Search , Bidirectional BFS , Dijkstra , BFS , DFS
 * Change sleepingTime constant variables accordingly to increase/decrease the speed of the visualization of an algorithm or the speed of backtracking the path
 * It should be noted that shortest path algorithms here can simply be replaced by BFS because there are no weights, but the main purpose is to visualize the algorithms and get a better understanding of how they work.
 * Project was made using SFML C++
+  
+  ![Desktop-20201014-17054416](https://user-images.githubusercontent.com/62825437/96009572-18670580-0e41-11eb-8485-cd166b8a6cc9.gif)
+
