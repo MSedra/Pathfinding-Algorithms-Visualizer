@@ -15,7 +15,7 @@ A* , Best First Search , Dijkstra , BFS , BiBFS , DFS
   * 'B' to run BFS
   * 'I' to run BiBfs
   * 'D' to run DFS
-*If there is a path from the source to the destination,
+* If there is a path from the source to the destination,
   *After running DFS, the destination node will be colored yellow
   *After running any other algorithm, all the nodes in the path will be colored yellow showing the exact shortest path
 * Wait until the current algorithm's visualization is finished
