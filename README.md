@@ -5,9 +5,9 @@ A* , Best First Search , Bidirectional BFS , Dijkstra , BFS , DFS
 
 ## Notes 
 
-* First, choose the source node "Colored green"
-* Then, choose the destination node "Colored blue"
-* After that, you can choose any number of nodes to be blocks "Colored red" except the starting and ending nodes
+* First, choose the source node "colored green"
+* Then, choose the destination node "colored blue"
+* After that, you can choose any number of nodes to be blocks "colored red" except the starting and ending nodes
 * Press
   * 'A' to run A* 
   * 'T' to run Best First Search
