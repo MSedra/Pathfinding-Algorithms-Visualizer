@@ -1,5 +1,5 @@
 # Pathfinding Algorithms' Visualizer
-A* , Best First Search , Bidirectional BFS , Dijkstra , BFS , DFS 
+  A* , Best First Search , Bidirectional BFS , Dijkstra , BFS , DFS 
 
 ---
 
